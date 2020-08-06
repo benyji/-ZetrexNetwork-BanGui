@@ -1,0 +1,2 @@
+# -ZetrexNetwork-BanGui
+Paid Product
