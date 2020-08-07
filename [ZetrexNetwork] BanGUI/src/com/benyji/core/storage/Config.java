@@ -8,7 +8,7 @@ import org.bukkit.craftbukkit.libs.org.apache.commons.io.FileUtils;
 import com.benyji.core.Main;
 
 
-public class Config {
+public class Config  {
 	private Main plugin;
 
 	public Config(Main plugin) {
@@ -27,4 +27,5 @@ public class Config {
 		}
 	}
 	
+
 }

@@ -1,0 +1,5 @@
+RELOAD:
+punish.reload
+
+USE:
+punish.use

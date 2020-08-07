@@ -3,3 +3,7 @@ name: ZetrexNetwork-BanGUI
 description: Staff Ban GUI
 version: 1.0
 # Version 1.0: 
+commands:
+  punish:
+    aliases: [p, ban]  
+    description: Core Punish Command

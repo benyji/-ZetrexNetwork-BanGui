@@ -19,6 +19,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.benyji.core.cmds.Punish;
 import com.benyji.core.storage.Config;
 import com.benyji.core.utils.TranslateColorCodes;
 
@@ -41,6 +42,8 @@ public class Main extends JavaPlugin {
 		e.Setup();
 
 		Bukkit.getServer().getPluginManager().registerEvents(new Test(), this);
+
+		getCommand("punish").setExecutor(new Punish());
 
 		consoleMSG(ChatColor.LIGHT_PURPLE.toString() + ChatColor.BOLD + "Zetrex Network [BanGUI]" + ChatColor.DARK_GRAY
 				+ ": " + ChatColor.GREEN + "Running latest Version '1.0'.");

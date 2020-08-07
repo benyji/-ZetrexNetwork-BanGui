@@ -55,16 +55,26 @@
 #
 # What would you like the title of the GUI to be?
 guiTitle: '&0&lZetrexNetwork &b[Ban GUI]'
+# What would you like to send players without permissions?
+noAccess: '&cSorry, you do not have access to that command!'
+# What would you like to send staff who use the wrong usage?
+invalidUsage: '&cUsage: /punish <player> <-s> OR /punish reload'
+# What would you like to send staff who reload the config?
+successfulReload: '&aThe config file has been reloaded!'
 #
 #											 				   ALPHABETICAL ORDER A-Z, 0-9
 #
 #                                                                   NAME CONFIGURATION
 # What should the display name of Advertising be on the GUI?
 advertising_display_name: '&bAdvertising'
+# What should the display name of 10+ Alts be on the GUI?
+alts_10_display_name: '&b10+ Alts'
 # What should the display name of 'AFK / Autoclicker' be on the GUI?
 afk_display_name: '&bAFK/ Autoclicker'
 # What should the display name of Anti Knockback be on the GUI?
 anti_kb_display_name: '&bAnti-Knockback'
+# What should the display name of Ban Evasion be on the GUI?
+ban_evasion_display_name: '&bBan Evasion'
 # What should the name of combat exploits be on the GUI?
 combat_display_name: '&bKillaura / TP Aura'
 # What should Hacked Creative Items be on the GUI?
@@ -72,11 +82,13 @@ creative_display_name: '&bHacked Creative Items'
 # What should the name of Criticals to be on the GUI?
 criticals_display_name: '&bCriticals'
 # What should the name of 'DDoS Threat / Crash Attempt' be on the GUI?
-ddos_display_name: '&bDDOS Threat / Crash Attempt'
+ddos_display_name: '&bDDoS Threat / Crash Attempt'
 # What should the name of 'Derp / Crouch / Skin Blinker' be on the GUI?
 derp_display_name: '&bDerp / Crouch / Skin Blinker'
 # What should the name of 'Hate / discrimination' be on the GUI?
 discrimination_display_name: '&bHate / Discrimination'
+# What should the name of Excessive Advertising be on the GUI?
+excessive_advertising_display_name: '&bExcessive Advertising'
 # What should the name of standard exploits be on the GUI?
 exploit_display_name: '&bX-Ray[BASES] / Exploiting'
 # What should the name of Extreme Harassment be on the GUI?
@@ -92,17 +104,25 @@ inappropriate_display_name: '&bInappropriate Name / Skin'
 # What should the name of Scaffold exploit be on the GUI?
 scaffold_display_name: '&bScaffold' 
 # What should the name of Sexual Harrasment be on the GUI?
-sexual_harrasment_display_name: '&bSexual Harrassment'
+sexual_harassment_display_name: '&bSexual Harrassment'
+# What should the name of Lag Machine exploit be on the GUI?
+lag_machine_display_name: '&bLag Machine'
+# What should the name of Manual Perm Ban be on the GUI?
+manual_perm_display_name: '&bManual Perm Ban'
+# What should the name of a Manual Raid Ban be on the GUI?
+manual_raid_display_name: '&bManual Raid Ban'
+# What should the icon of a Manual 60 Day Ban be on the GUI?
+manual_60_display_name: '&bManual 60 Day Ban'
 # What should the name of mining exploits be on the GUI
 mining_display_name: '&bFast Break / Place / Nuker / Auto Tool'
 # What should the name of Minor Repeat Offenses be on the GUI?
 minor_display_name: '&bRepeated Minor Offenses'
 # What should the name of movement exploits be on the GUI?
 movement_display_name: '&bFly / Speed / No-Fall / Jesus'
-# What should the name of Lag Machine exploit be on the GUI?
-lag_machine_display_name: '&bLag Machine'
 # What should the name of 'Phase/ Freecam/ Glitching' be on the GUI?
 phase_display_name: '&bPhase / Freecam / Glitching'
+# What should the name of 'Repeat Hate / Discrimination' be on the GUI?
+repeat_discrimination_display_name: '&bRepeat Hate / Discrimination' 
 # What should the name of 'X-Ray Ores/ Dungeons' be on the GUI?
 xray_display_name: '&bX-Ray[ORES] / Dungeons'
 #
@@ -111,10 +131,14 @@ xray_display_name: '&bX-Ray[ORES] / Dungeons'
 #
 # What should the icon of advertising be on the GUI?
 advertising_icon: 'SIGN'
+# What should the icon of 10+ Alts be on the GUI?
+alts_10_icon: 'ARMOR_STAND'
 # What should the icon of 'AFK / Autoclicker' be on the GUI?
 afk_icon: 'STONE_BUTTON'
 # What should the icon of Anti Knockback be on the GUI?
 anti_kb_icon: 'EGG'
+# What should the icon of Ban Evasion be on the GUI?
+ban_evasion_icon: 'BEACON'
 # What should the icon of combat exploits be on the GUI?
 combat_icon: 'DIAMOND_SWORD'
 # What should the icon of Hacked Creative Items be on the GUI?
@@ -125,8 +149,10 @@ criticals_icon: 'NETHER_STALK'
 ddos_icon: 'REDSTONE'
 # What should the name of 'Derp / Crouch / Skin Blinker' be on the GUI?
 derp_icon: 'DIRT'
-# What should the icon of 'Hate / Discrimination be on the GUI?
+# What should the icon of 'Hate / Discrimination' be on the GUI?
 discrimination_icon: 'JACK_O_LANTERN'
+# What should the icon of Excessive Advertising be on the GUI?
+excessive_advertising_icon: 'PAPER'
 # What should the icon of standard exploits be on the GUI?
 exploit_icon: 'CHEST'
 # What should the icon of Extreme Harassment be on the GUI?
@@ -142,16 +168,87 @@ inappropriate_icon: 'PAINTING'
 # What should the icon of Scaffold exploit be on the GUI?
 scaffold_icon: 'STONE'
 # What should the icon of Sexual Harrasment be on the GUI?
-sexual_harrasment_icon: 'GOLDEN_CARROT'
+sexual_harassment_icon: 'GOLDEN_CARROT'
+# What should the icon of Lag Machine be on the GUI?
+lag_machine_icon: 'PISTON_STICKY_BASE' 
+# What should the icon of Manual Perm Ban be on the GUI?
+manual_perm_icon: 'BEDROCK'
+# What should the icon of a Manual Raid Ban be on the GUI?
+manual_raid_icon: 'HOPPER'
+# What should the icon of a Manual 60 Day Ban be on the GUI?
+manual_60_icon: 'REDSTONE_TORCH_ON'
 # What should the icon of mining exploits be on the GUI?
 mining_icon: 'DIAMOND_PICKAXE'
 # What should the icon of Minor Repeat Offenses be on the GUI?
 minor_icon: 'EMERALD_BLOCK'
 # What Should the icon of movement exploits be on the GUI?
 movement_icon: 'FEATHER'
-# What should the icon of Lag Machine be on the GUI?
-lag_machine_icon: 'PISTON_STICKY_BASE' 
 # What should the icon of 'Phase/ Freecam/ Glitching' be on the GUI?
 phase_icon: 'COMPASS'
+# What should the icon of 'Repeat Discrimination' be on the GUI?
+repeat_discrimination_icon: 'REDSTONE_BLOCK'
 # What should the icon of 'X-Ray Ores/ Dungeons' be on the GUI?
 xray_icon: 'DIAMOND_ORE'
+#
+#                                                                   BAN TIMES CONFIGURATION
+# How long should the ban time for advertising be?
+advertising_time: '4d'
+# How long should the ban time for 10+ Alts be?
+alts_10_time: '95d'
+# How long should the ban time for 'AFK / Autoclicker' be?
+afk_time: '7d'
+# How long should the ban time for Anti Knockback be?
+anti_kb_time: '14d'
+# How long should the ban time for Ban Evasion be?
+ban_evasion_time: '50y'
+# How long should the ban time for combat exploits be?
+combat_time: '1M'
+# How long should the ban time for Hacked Creative Items be?
+creative_time: '90d'
+# How long should the ban time for criticals be?
+criticals_time: '1M'
+# How long should the ban time for 'DDOS / Crash Attempt' be?
+ddos_time: '2y'
+# How long should the ban time for 'Derp / Crouch / Skin Blinker' be?
+derp_time: '7d'
+# How long should the ban time for 'Hate / Discrimination' be?
+discrimination_time: '25d'
+# How long should the ban time for 'Excessive Advertising' be?
+excessive_advertising_time: '30d'
+# How long should the ban time for standard exploits be?
+exploit_time: '14d'
+# How long should the ban time for Extreme Harassment be?
+extreme_time: '1y'
+# How long should the ban time for griefing be?
+griefing_time: '30d'
+# How long should the ban time for harassment be?
+harassment_time: '90d'
+# How long should the ban time for 'Staff Impersonation / Disrespect' be?
+impersonation_time: '1M'
+# How long should the ban time for 'Inappropriate Name / Skin' be?
+inappropriate_time: '1M'
+# How long should the ban time for Scaffold exploit be?
+scaffold_time: '14d'
+# How long should the ban time for Sexual Harassment be?
+sexual_harassment_time: '90d'
+# How long should the ban time for Lag Machine Exploit be?
+lag_machine_time: '90d'
+# How long should a perm ban last?
+manual_perm: '50y'
+# Do I really have to explain this one?
+manual_60_time: '60d' 
+# How long should the ban time for mining exploits be?
+mining_time: '14d'
+# How long should the ban time for Minor Repeat Offenses be?
+minor_time: '90d'
+# How long should the ban time for movement exploits be?
+movement_time: '7d'
+# How long should the ban time for 'Phase/ Freecam/ Glitching' be?
+phase_time: '14d'
+# How long should the ban time for 'Repeat Discrimination' be?
+repeat_discrimination: '90d' 
+# How long should the ban time for 'X-Ray Ores/ Dungeons' be?
+xray_time: '3d'
+#
+#
+# The end! Took me long enough haha | <3 benyji
