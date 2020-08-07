@@ -130,7 +130,7 @@ discrimination_icon: 'JACK_O_LANTERN'
 # What should the icon of standard exploits be on the GUI?
 exploit_icon: 'CHEST'
 # What should the icon of Extreme Harassment be on the GUI?
-extreme_icon: 'YELLOW_DYE'
+extreme_icon: 'GOLD_BLOCK'
 # What should the icon of griefing be on the GUI?
 griefing_icon: 'LAVA_BUCKET'
 # What should the icon of harrassment be on the GUI?
@@ -146,7 +146,7 @@ sexual_harrasment_icon: 'GOLDEN_CARROT'
 # What should the icon of mining exploits be on the GUI?
 mining_icon: 'DIAMOND_PICKAXE'
 # What should the icon of Minor Repeat Offenses be on the GUI?
-minor_icon: 'INC_SACK, 1, (byte) 5'
+minor_icon: 'EMERALD_BLOCK'
 # What Should the icon of movement exploits be on the GUI?
 movement_icon: 'FEATHER'
 # What should the icon of Lag Machine be on the GUI?
