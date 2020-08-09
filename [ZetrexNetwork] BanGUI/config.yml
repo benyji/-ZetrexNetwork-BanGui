@@ -126,7 +126,70 @@ repeat_discrimination_display_name: '&bRepeat Hate / Discrimination'
 # What should the name of 'X-Ray Ores/ Dungeons' be on the GUI?
 xray_display_name: '&bX-Ray[ORES] / Dungeons'
 #
-#                                                                   ICON CONFIGURATION
+#                                                               BAN REASON CONFIGURATION
+#                                                         WHAT THE PLAYED BANNED SEES (No Colors)
+# What should the ban reason of Advertising be?
+advertising_reason: 'Advertising'
+# What should the ban reason of 10+ Alts be?
+alts_10_reason: '10+ Alts'
+# What should the ban reason of 'AFK / Autoclicker' be?
+afk_reason: 'AFK/ Autoclicker'
+# What should the ban reason of Anti Knockback be?
+anti_kb_reason: 'Anti-Knockback'
+# What should the ban reason of  Ban Evasion be?
+ban_evasion_reason: 'Ban Evasion'
+# What should the ban reason of  combat exploits be?
+combat_reason: 'Killaura / TP Aura'
+# What should the ban reason of Hacked Creative Items be?
+creative_reason: 'Hacked Creative Items'
+# What should the ban reason of Criticals to be?
+criticals_reason: 'Criticals'
+# What should the ban reason of 'DDoS Threat / Crash Attempt' be?
+ddos_reason: 'DDoS Threat / Crash Attempt'
+# What should the ban reason of 'Derp / Crouch / Skin Blinker' be?
+derp_reason: 'Derp / Crouch / Skin Blinker'
+# What should the ban reason of 'Hate / discrimination' be?
+discrimination_reason: 'Hate / Discrimination'
+# What should the ban reason of Excessive Advertising be?
+excessive_advertising_reason: 'Excessive Advertising'
+# What should the ban reason of standard exploits be?
+exploit_reason: 'X-Ray[BASES] / Exploiting'
+# What should the ban reason of Extreme Harassment be?
+extreme_reason: 'Excessive Harassment'
+# What should the ban reason of griefing be?
+griefing_reason: 'Griefing'
+# What should the ban reason of Harassment be?
+harassment_reason: 'Harassment'
+# What should the ban reason of 'Staff Impersonation / Disrespect' be?
+impersonation_reason: 'Staff Impersonation / Disrespect'
+# What should the ban reason of 'Inappropriate Skin / Name' be?
+inappropriate_reason: 'Inappropriate Name / Skin'
+# What should the ban reason of Scaffold exploit be?
+scaffold_reason: 'Scaffold' 
+# What should the ban reason of Sexual Harrasment be?
+sexual_harassment_reason: 'Sexual Harrassment'
+# What should the ban reason of Lag Machine exploit be?
+lag_machine_reason: 'Lag Machine'
+# What should the ban reason of Manual Perm Ban be?
+manual_perm_reason: 'Manual Perm Ban'
+# What should the ban reason of Manual Raid Ban be?
+manual_raid_reason: 'Manual Raid Ban'
+# What should the ban reason of a Manual 60 Day Ban be?
+manual_60_reason: 'Manual 60 Day Ban'
+# What should the ban reason of mining exploits be on the GUI
+mining_reason: 'Fast Break / Place / Nuker / Auto Tool'
+# What should the ban reason of Minor Repeat Offenses be?
+minor_reason: 'Repeated Minor Offenses'
+# What should the ban reason of movement exploits be?
+movement_reason: 'Fly / Speed / No-Fall / Jesus'
+# What should the ban reason of 'Phase/ Freecam/ Glitching' be?
+phase_reason: 'Phase / Freecam / Glitching'
+# What should the ban reason of 'Repeat Hate / Discrimination' be?
+repeat_discrimination_reason: 'Repeat Hate / Discrimination' 
+# What should the ban reason of 'X-Ray Ores/ Dungeons' be?
+xray_reason: 'X-Ray[ORES] / Dungeons'
+#
+#                                                                      ICON CONFIGURATION
 #                                   List of icon names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #
 # What should the icon of advertising be on the GUI?
@@ -234,7 +297,9 @@ sexual_harassment_time: '90d'
 # How long should the ban time for Lag Machine Exploit be?
 lag_machine_time: '90d'
 # How long should a perm ban last?
-manual_perm: '50y'
+manual_perm_time: '50y'
+# Do I really have to explain this one?
+manual_raid_time: '1y' 
 # Do I really have to explain this one?
 manual_60_time: '60d' 
 # How long should the ban time for mining exploits be?
@@ -246,7 +311,7 @@ movement_time: '7d'
 # How long should the ban time for 'Phase/ Freecam/ Glitching' be?
 phase_time: '14d'
 # How long should the ban time for 'Repeat Discrimination' be?
-repeat_discrimination: '90d' 
+repeat_discrimination_time: '90d' 
 # How long should the ban time for 'X-Ray Ores/ Dungeons' be?
 xray_time: '3d'
 #

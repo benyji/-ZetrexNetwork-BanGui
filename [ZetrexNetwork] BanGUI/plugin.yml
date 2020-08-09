@@ -2,6 +2,7 @@ main: com.benyji.core.Main
 name: ZetrexNetwork-BanGUI
 description: Staff Ban GUI
 version: 1.0
+softdepend: [LiteBans]
 # Version 1.0: 
 commands:
   punish:
