@@ -1,5 +1,7 @@
 package com.benyji.core.gui.builds;
 
+import java.util.concurrent.CompletableFuture;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -22,6 +24,8 @@ public class UI_Ver_1_14_4 {
 
 	public void applyUI(Player player) {
 
+		e.setID(player.getUniqueId());
+		
 		Inventory gui = Bukkit.createInventory(null, 45, c.translate(plugin.getConfig().getString("guiTitle")));
 
 		ItemStack xray = e.getLocalItem(Material.valueOf(plugin.getConfig().getString("xray_icon")),
@@ -154,8 +158,9 @@ public class UI_Ver_1_14_4 {
 		backButtonMeta.setLocalizedName("MENU_CLOSE_BUTTON");
 		backButton.setItemMeta(backButtonMeta);
 		gui.setItem(44, backButton);
-
+		
 		player.openInventory(gui);
+		
 	}
 
 }

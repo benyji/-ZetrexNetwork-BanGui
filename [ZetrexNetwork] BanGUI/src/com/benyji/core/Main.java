@@ -26,6 +26,7 @@ import com.benyji.core.utils.TranslateColorCodes;
 public class Main extends JavaPlugin {
 
 	TranslateColorCodes c = new TranslateColorCodes();
+    public static Punish punish;
 
 	@Override
 	public void onEnable() {
@@ -47,6 +48,9 @@ public class Main extends JavaPlugin {
 
 		consoleMSG(ChatColor.LIGHT_PURPLE.toString() + ChatColor.BOLD + "Zetrex Network [BanGUI]" + ChatColor.DARK_GRAY
 				+ ": " + ChatColor.GREEN + "Running latest Version '1.0'.");
+		
+		punish = new Punish();
+
 	}
 
 	public void consoleMSG(String m) {
