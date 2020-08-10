@@ -1,14 +1,6 @@
 package com.benyji.core.gui;
 
-import litebans.api.Database;
-import static com.benyji.core.Main.punish;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.UUID;
-import java.util.concurrent.CompletableFuture;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -27,73 +19,27 @@ public class ItemStackBuilder {
 	Plugin plugin = Bukkit.getPluginManager().getPlugin("ZetrexNetwork-BanGUI");
 
 	ArrayList<String> Lore = new ArrayList<String>();
-	UUID identifier;
-
-	public void setID(UUID uuid) {
-		identifier = uuid;
-	}
 
 	public ItemStack getLocalItem(Material m, String n, String type) {
-		
+
 		Lore.clear();
-		
+
 		ItemStack item = new ItemStack(m);
 		ItemMeta meta = item.getItemMeta();
-
+		meta.setLocalizedName(m.name());
 		meta.setDisplayName(c.translate(n));
 
 		setTime(type);
+		
+		meta.setLore(Lore);
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+		meta.addItemFlags(ItemFlag.HIDE_DESTROYS);
+		meta.addItemFlags(ItemFlag.HIDE_PLACED_ON);
+		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
-		// Set user history grey and yellow
-		// boolean: punish.preferences.get(identifier)
-		CompletableFuture.runAsync(() -> {
-		    String uuid = identifier.toString();
-		    String query = "SELECT * FROM {bans} WHERE uuid=?";
-		 
-		    try (PreparedStatement st = Database.get().prepareStatement(query)) {
-		        st.setString(1, uuid);
-		     
-		        try (ResultSet rs = st.executeQuery()) {
-		            while (rs.next()) {
-		                String reason = rs.getString("reason");
-		                setHistory(reason, m);
-		            }
-		        }
-		    } catch (SQLException e) {
-		        e.printStackTrace();
-		    }
-		}).thenRun(() -> {
-			meta.setLore(Lore);
-
-			meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-			meta.addItemFlags(ItemFlag.HIDE_DESTROYS);
-			meta.addItemFlags(ItemFlag.HIDE_PLACED_ON);
-			meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-
-			item.setItemMeta(meta);
-
-		});
+		item.setItemMeta(meta);
 		return item;
 
-	}
-	
-
-	public void setHistory(String reason, Material m) {
-		System.out.println("1");
-		if (reason == plugin.getConfig().getString("advertising_reason")) {
-			System.out.println("2");
-
-			if (Material.valueOf(plugin.getConfig().getString("advertising_icon")) != null) {
-				System.out.println("3");
-
-				Lore.add(ChatColor.GRAY + "Previously banned: " + ChatColor.RED + "YES");
-			}
-
-		} else {
-			System.out.println("4");
-
-			Lore.add(ChatColor.GRAY + "Previously banned: " + ChatColor.YELLOW + "NO");
-		}
 	}
 
 	public void setTime(String type) {

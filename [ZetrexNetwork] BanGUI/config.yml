@@ -61,6 +61,8 @@ noAccess: '&cSorry, you do not have access to that command!'
 invalidUsage: '&cUsage: /punish <player> <-s> OR /punish reload'
 # What would you like to send staff who reload the config?
 successfulReload: '&aThe config file has been reloaded!'
+# Would you like to show my contact information on the GUI? Put 'false' for NO, or 'true' for YES.
+showCredits: true
 #
 #											 				   ALPHABETICAL ORDER A-Z, 0-9
 #
@@ -193,7 +195,7 @@ xray_reason: 'X-Ray[ORES] / Dungeons'
 #                                   List of icon names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #
 # What should the icon of advertising be on the GUI?
-advertising_icon: 'SIGN'
+advertising_icon: 'OAK_SIGN'
 # What should the icon of 10+ Alts be on the GUI?
 alts_10_icon: 'ARMOR_STAND'
 # What should the icon of 'AFK / Autoclicker' be on the GUI?
@@ -207,7 +209,7 @@ combat_icon: 'DIAMOND_SWORD'
 # What should the icon of Hacked Creative Items be on the GUI?
 creative_icon: 'DIAMOND'
 # What should the icon of Criticals to be on the GUI?
-criticals_icon: 'NETHER_STALK'
+criticals_icon: 'NETHER_WART'
 # What should the icon of 'DDOS / Crash Attempt' be on the GUI?
 ddos_icon: 'REDSTONE'
 # What should the name of 'Derp / Crouch / Skin Blinker' be on the GUI?
@@ -233,13 +235,13 @@ scaffold_icon: 'STONE'
 # What should the icon of Sexual Harrasment be on the GUI?
 sexual_harassment_icon: 'GOLDEN_CARROT'
 # What should the icon of Lag Machine be on the GUI?
-lag_machine_icon: 'PISTON_STICKY_BASE' 
+lag_machine_icon: 'STICKY_PISTON' 
 # What should the icon of Manual Perm Ban be on the GUI?
 manual_perm_icon: 'BEDROCK'
 # What should the icon of a Manual Raid Ban be on the GUI?
 manual_raid_icon: 'HOPPER'
 # What should the icon of a Manual 60 Day Ban be on the GUI?
-manual_60_icon: 'REDSTONE_TORCH_ON'
+manual_60_icon: 'REDSTONE_TORCH'
 # What should the icon of mining exploits be on the GUI?
 mining_icon: 'DIAMOND_PICKAXE'
 # What should the icon of Minor Repeat Offenses be on the GUI?
@@ -315,5 +317,18 @@ repeat_discrimination_time: '90d'
 # How long should the ban time for 'X-Ray Ores/ Dungeons' be?
 xray_time: '3d'
 #
+#                                                                      ADDITIONAL PUNISHMENTS
+kick_display_name: '&eKick'
+kick_reason: 'Kicked at moderator''s discretion!'
+kick_icon: 'MAP' 
+# - - - - - - - - - -
+mute_display_name: '&9Permanent Mute'
+mute_reason: 'Muted at moderator''s discretion!'
+mute_time: '50y'
+mute_icon: 'WRITABLE_BOOK'
+# - - - - - - - - - -
+unban_display_name: '&aUnban'
+unban_icon: 'ENCHANTED_BOOK'
+# - - - - - - - - - -
 #
 # The end! Took me long enough haha | <3 benyji

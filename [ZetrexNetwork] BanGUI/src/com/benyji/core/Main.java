@@ -20,13 +20,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.benyji.core.cmds.Punish;
+import com.benyji.core.events.InteractionListener;
 import com.benyji.core.storage.Config;
 import com.benyji.core.utils.TranslateColorCodes;
 
 public class Main extends JavaPlugin {
 
 	TranslateColorCodes c = new TranslateColorCodes();
-    public static Punish punish;
+	public static Punish punish;
 
 	@Override
 	public void onEnable() {
@@ -42,13 +43,13 @@ public class Main extends JavaPlugin {
 		Config e = new Config(this);
 		e.Setup();
 
-		Bukkit.getServer().getPluginManager().registerEvents(new Test(), this);
+		Bukkit.getServer().getPluginManager().registerEvents(new InteractionListener(), this);
 
 		getCommand("punish").setExecutor(new Punish());
 
 		consoleMSG(ChatColor.LIGHT_PURPLE.toString() + ChatColor.BOLD + "Zetrex Network [BanGUI]" + ChatColor.DARK_GRAY
 				+ ": " + ChatColor.GREEN + "Running latest Version '1.0'.");
-		
+
 		punish = new Punish();
 
 	}

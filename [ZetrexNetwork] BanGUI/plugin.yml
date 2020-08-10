@@ -3,8 +3,10 @@ name: ZetrexNetwork-BanGUI
 description: Staff Ban GUI
 version: 1.0
 softdepend: [LiteBans]
+api-version: 1.14
 # Version 1.0: 
 commands:
   punish:
-    aliases: [p, ban]  
+    aliases: [p]  
     description: Core Punish Command
+

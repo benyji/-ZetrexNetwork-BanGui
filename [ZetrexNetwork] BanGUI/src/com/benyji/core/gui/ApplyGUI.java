@@ -1,6 +1,7 @@
 package com.benyji.core.gui;
 
 import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
@@ -14,7 +15,7 @@ public class ApplyGUI {
 
 	UI_Ver_1_14_4 ver1_14_4 = new UI_Ver_1_14_4();
 
-	public void applyUIVer(Player player) {
-		ver1_14_4.applyUI(player);
+	public void applyUIVer(Player player, OfflinePlayer target) {
+		ver1_14_4.applyUI(player, target);
 	}
 }

@@ -3,3 +3,6 @@ punish.reload
 
 USE:
 punish.use
+
+HELP:
+punish.help
