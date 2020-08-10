@@ -4,7 +4,7 @@ The ZetrexNetwork BanGUI is a fully custom, build from the ground up code that h
 
 ## Installation
 
-Use the compiled [jar](https://pip.pypa.io/en/stable/) and head over to your server hosting platform.
+Use the compiled [jar](https://drive.google.com/uc?export=download&id=1vLIw3D2pdz3o0RqApYJ8AyTGfB3tKSwb) and head over to your server hosting platform.
 
 ```bash
 HOME > FTP-FILE ACCESS > PLUGINS
