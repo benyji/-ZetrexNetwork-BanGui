@@ -62,13 +62,13 @@ invalidUsage: '&cUsage: /punish <player> <-s> OR /punish reload'
 # What would you like to send staff who reload the config?
 successfulReload: '&aThe config file has been reloaded!'
 # Would you like to show my contact information on the GUI? Put 'false' for NO, or 'true' for YES.
-showCredits: true
+showCredits: false
 #
 #											 				   ALPHABETICAL ORDER A-Z, 0-9
 #
 #                                                                   NAME CONFIGURATION
 # What should the display name of Advertising be on the GUI?
-advertising_display_name: '&bAdvertising'
+advertising_display_name: '&cAdvertising'
 # What should the display name of 10+ Alts be on the GUI?
 alts_10_display_name: '&b10+ Alts'
 # What should the display name of 'AFK / Autoclicker' be on the GUI?
@@ -267,11 +267,11 @@ anti_kb_time: '14d'
 # How long should the ban time for Ban Evasion be?
 ban_evasion_time: '50y'
 # How long should the ban time for combat exploits be?
-combat_time: '1M'
+combat_time: '30d'
 # How long should the ban time for Hacked Creative Items be?
 creative_time: '90d'
 # How long should the ban time for criticals be?
-criticals_time: '1M'
+criticals_time: '30d'
 # How long should the ban time for 'DDOS / Crash Attempt' be?
 ddos_time: '2y'
 # How long should the ban time for 'Derp / Crouch / Skin Blinker' be?
@@ -289,9 +289,9 @@ griefing_time: '30d'
 # How long should the ban time for harassment be?
 harassment_time: '90d'
 # How long should the ban time for 'Staff Impersonation / Disrespect' be?
-impersonation_time: '1M'
+impersonation_time: '30d'
 # How long should the ban time for 'Inappropriate Name / Skin' be?
-inappropriate_time: '1M'
+inappropriate_time: '30d'
 # How long should the ban time for Scaffold exploit be?
 scaffold_time: '14d'
 # How long should the ban time for Sexual Harassment be?
